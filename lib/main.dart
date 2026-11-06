@@ -178,6 +178,15 @@ class MainScreen extends StatelessWidget {
                 ],
               ),          
 
+              Padding(padding: EdgeInsets.symmetric(horizontal: 16),
+                child: SizedBox(
+                  width: double.infinity,
+                  child: OutlinedButton(onPressed: () {}, child: const Text('Rencanakan Kepergian'), style: OutlinedButton.styleFrom())
+                ),
+                  
+                  
+                  
+              ),
                 ]
               ), 
            )
