@@ -30,12 +30,59 @@ class MainScreen extends StatelessWidget {
                 fontSize: 25,
                 ),
               ),
-              SizedBox(height: 10,)
-            ],
-          ),
-        ),
-        ),
+              SizedBox(height: 7,),
 
-    );
+              Row(
+                children: [
+                  Icon(Icons.star_rounded,
+                    color: const Color.fromARGB(255, 253, 173, 0),
+                  ),
+                  SizedBox(width: 7,),
+
+                  Text('4.6',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18.0 ,
+                    )
+                  ),
+
+                   SizedBox(width: 7,),
+
+                  Icon(Icons.family_restroom ,
+                    color: Colors.black,
+                  ),
+
+                  SizedBox(width: 7,),
+
+                  Text('Cocok Untuk Keluarga',
+                  style: TextStyle(
+                    fontSize: 18.0 ,
+                    )
+                  ),
+                ],
+              ),
+
+              SizedBox(height: 15,),  
+
+              ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.asset('images/gambar_bunga.png',
+                )
+                  ),
+
+              SizedBox(height: 18,), 
+
+              Text('Tentang Taman',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 23,
+                ),
+              ),                
+                ]
+              ), 
+           )
+        )
+  
+      );
   }
 }
