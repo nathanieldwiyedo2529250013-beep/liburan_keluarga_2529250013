@@ -70,14 +70,114 @@ class MainScreen extends StatelessWidget {
                 )
                   ),
 
-              SizedBox(height: 18,), 
+              SizedBox(height: 15,), 
 
               Text('Tentang Taman',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 23,
                 ),
-              ),                
+              ),          
+
+              SizedBox(height: 10,),       
+
+              Text('Taman bunga menjadi tempat rekreasi yang menawarkan pemandangan berwarna-warni dan suasana yang menyegarkan. Pengunjung dapat berjalan santai. Berfoto bersama keluarga, serta menikmati waktu di ruang terbuka.',
+              style: TextStyle(
+                fontSize: 15,
+                ),
+                textAlign: TextAlign.justify,
+              ),     
+
+              SizedBox(height: 15,),
+
+              Text('Rencana Kunjungan',
+                style: TextStyle(
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold
+                ),
+              ),  
+
+              SizedBox(height: 15,),
+     
+              Row(
+
+                children: [
+                  Icon(Icons.location_on_rounded,
+                    color: const Color.fromARGB(255, 82, 80, 80),
+                  ),
+                  SizedBox(width: 7,),
+
+                  Text('Lokasi',
+                  style: TextStyle(
+                      fontSize: 14.0 ,
+                    )
+                  ),     
+
+                  Spacer(),
+
+                  Text('Bendungan, Semarang',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0 ,
+                    )
+                  ),
+                ],
+              ),
+
+              Divider(height: 20,),
+
+              Row(
+
+                children: [
+                  Icon(Icons.access_time,
+                    color: const Color.fromARGB(255, 82, 80, 80),
+                  ),
+                  SizedBox(width: 7,),
+
+                  Text('Jam Buka',
+                  style: TextStyle(
+                      fontSize: 14.0 ,
+                    )
+                  ),     
+
+                  Spacer(),
+
+                  Text('08.00 - 17.00',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0 ,
+                    )
+                  ),
+                ],
+              ),
+
+              Divider(height: 20,),
+
+              Row(
+
+                children: [
+                  Icon(Icons.airplane_ticket_outlined,
+                    color: const Color.fromARGB(255, 82, 80, 80),
+                  ),
+                  SizedBox(width: 7,),
+
+                  Text('Harga Tiket',
+                  style: TextStyle(
+                      fontSize: 14.0 ,
+                    )
+                  ),     
+
+                  Spacer(),
+
+                  Text('Rp25.000',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0 ,
+                    )
+                  ),
+                ],
+              ),          
+
                 ]
               ), 
            )
